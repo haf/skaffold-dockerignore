@@ -1,0 +1,13 @@
+apiVersion: skaffold/v1beta13
+kind: Config
+build:
+  # local:
+  #   useDockerCLI: true
+  artifacts:
+  - image: site
+    docker:
+      buildArgs:
+        COMMIT_SHA: "{{.COMMIT_SHA}}"
+deploy:
+  kustomize:
+    path: ./k8s
