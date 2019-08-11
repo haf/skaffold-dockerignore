@@ -12,3 +12,5 @@ The Skaffold command fails because `.dockerignore` is incorrectly read and `page
 but `docker` works.
 
 Expected both to behave the exact same way.
+
+- [.dockerignore reference](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
